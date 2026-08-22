@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MR HUB</title>
+    <title>MR-HUB</title>
     <style>
         :root {
             --bg-dark: #000000;
@@ -193,18 +193,27 @@
             letter-spacing: 3px; 
         }
 
-        /* تكبير وتوضيح صور الهاكات القديمة المربعة والمستطيلة */
-        .classic-hack-img {
-            width: 100%;
-            max-width: 280px;
-            height: 160px;
-            border-radius: 12px;
+        /* تعديل صور الهاكات المربعة مع إضافة أنيميشن رقص/اهتزاز */
+        .square-hack-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 18px;
             object-fit: cover;
             margin: 0 auto 15px;
             background-color: #000000;
             border: 2px solid #ffffff;
-            box-shadow: 0 0 18px rgba(255, 255, 255, 0.6);
+            box-shadow: 0 0 22px rgba(255, 255, 255, 0.7);
             display: block;
+            animation: danceAnimation 3s ease-in-out infinite alternate;
+        }
+
+        /* أنيميشن رقص واهتزاز لصور الهاكات */
+        @keyframes danceAnimation {
+            0% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(3deg) scale(1.02); }
+            50% { transform: rotate(-3deg) scale(0.98); }
+            75% { transform: rotate(2deg) scale(1.03); }
+            100% { transform: rotate(-2deg) scale(1); }
         }
 
         .container { max-width: 850px; margin: 0 auto; padding: 10px 20px 50px; }
@@ -253,6 +262,7 @@
             padding: 4px;
             border: 2px solid #ffffff !important;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            animation: danceAnimation 2.5s infinite alternate;
         }
 
         .sub-page { display: none; background: transparent; border: none; padding: 5px; animation: fadeEffect 0.3s ease forwards; }
@@ -319,17 +329,15 @@
             transform: scale(1.02);
         }
 
-        /* تكبير وتوضيح صورة أيقونة التحميل */
+        /* تكبير وتوضيح صورة أيقونة التحميل الجديدة (IMG_5010.jpeg) */
         .dl-icon-img {
-            width: 48px; 
-            height: 48px; 
-            object-fit: contain;
-            background-color: #ffffff !important;
+            width: 52px; 
+            height: 52px; 
+            object-fit: cover;
             border-radius: 12px;
-            padding: 4px;
             border: 2px solid #ffffff;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
-            filter: contrast(1.1) brightness(1.05);
+            box-shadow: 0 0 18px rgba(255, 255, 255, 0.9);
+            animation: danceAnimation 2s ease-in-out infinite alternate;
         }
 
         .back-btn { 
@@ -496,15 +504,15 @@
             <div class="section-title-white">قائمة الايفون (iOS)</div>
             <div class="cards-grid">
                 <div class="hack-card">
-                    <img src="https://raw.githubusercontent.com/hatm12345cc-source/VN7/refs/heads/main/IMG_1929.png" class="classic-hack-img">
+                    <img src="https://raw.githubusercontent.com/hatm12345cc-source/VN7/refs/heads/main/IMG_1929.png" class="square-hack-img">
                     <h3>Delta</h3>
                     <div class="btn-group">
                         <a href="itms-services://?action=download-manifest&url=https://delta.bz/manifest.plist" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install Delta</span>
                         </a>
                         <a href="https://nekoo.eu.org/mnzdiQ" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install Delta VN</span>
                         </a>
                     </div>
@@ -517,77 +525,77 @@
             <div class="section-title-white">قائمة الاندرويد (Android)</div>
             <div class="cards-grid">
                 <div class="hack-card">
-                    <img src="https://raw.githubusercontent.com/hatm12345cc-source/VN7/refs/heads/main/IMG_1929.png" class="classic-hack-img">
+                    <img src="https://raw.githubusercontent.com/hatm12345cc-source/VN7/refs/heads/main/IMG_1929.png" class="square-hack-img">
                     <h3>Delta</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/nsyedn6qmsv4pqi/Delta-2.729.840.apk/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install Delta</span>
                         </a>
                         <a href="https://www.mediafire.com/file/5pvz0fjuaudojmd/Delta+VN+New.apk/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install Delta VN</span>
                         </a>
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/refs/heads/main/IMG_2577.jpeg" class="classic-hack-img">
+                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/refs/heads/main/IMG_2577.jpeg" class="square-hack-img">
                     <h3>Arceus X</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/dlypi7n7b8azy74/Roblox.Arceus.X.NEO.2.2.7.apk.download/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install Arceus Neo</span>
                         </a>
                         <a href="https://vng.spdmteam.com/" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install Arceus VN</span>
                         </a>
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/refs/heads/main/IMG_2609.jpeg" class="classic-hack-img">
+                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/refs/heads/main/IMG_2609.jpeg" class="square-hack-img">
                     <h3>PunkX</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/4cz0juuzjfyqqm4/PunkX_64Bits.apk/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install PunkX Original</span>
                         </a>
                         <a href="https://www.mediafire.com/file/tafzvqylpjzp4go/PunkX_VNG_64Bits.apk/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install PunkX VNG</span>
                         </a>
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/refs/heads/main/IMG_2580.jpeg" class="classic-hack-img">
+                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/refs/heads/main/IMG_2580.jpeg" class="square-hack-img">
                     <h3>Codex</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/9qz50mqeizkgkww/Codex+v2.729.840.apk/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install Codex Global</span>
                         </a>
                         <a href="https://www.mediafire.com/file/5p08n8qhtsv4x3s/Codex+VNG+V2.715+No+Key.apk/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install Codex VN</span>
                         </a>
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://github.com/Rxz60/TRX5/raw/refs/heads/main/4865B4C0-8AD9-44E7-AEF1-93DFA9FFE555.png" class="classic-hack-img">
+                    <img src="https://github.com/Rxz60/TRX5/raw/refs/heads/main/4865B4C0-8AD9-44E7-AEF1-93DFA9FFE555.png" class="square-hack-img">
                     <h3>VegaX</h3>
                     <div class="btn-group">
                         <a href="https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install VegaX</span>
                         </a>
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/A590D67D-235D-4C31-8606-59127F58FF03.png" class="classic-hack-img">
+                    <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/A590D67D-235D-4C31-8606-59127F58FF03.png" class="square-hack-img">
                     <h3>Trigon</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/1p5mhe2y2hh97z1/2.726.1142_trigon.apk/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install Trigon</span>
                         </a>
                     </div>
@@ -600,31 +608,31 @@
             <div class="section-title-white">قائمة البي سي (PC)</div>
             <div class="cards-grid">
                 <div class="hack-card">
-                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/heads/main/IMG_2612.jpeg" class="classic-hack-img">
+                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/heads/main/IMG_2612.jpeg" class="square-hack-img">
                     <h3>Velocity</h3>
                     <div class="btn-group">
                         <a href="https://gofile.io/d/biQGwp" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install Velocity</span>
                         </a>
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/A590D67D-235D-4C31-8606-59127F58FF03.png" class="classic-hack-img">
+                    <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/A590D67D-235D-4C31-8606-59127F58FF03.png" class="square-hack-img">
                     <h3>Trigon</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/jwmwp9xhriyqkql/Trigon_Evo_0.2.6.exe/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install Trigon PC</span>
                         </a>
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/8EDAC7FF-974A-4351-8F15-8C2592B06CF4.png" class="classic-hack-img">
+                    <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/8EDAC7FF-974A-4351-8F15-8C2592B06CF4.png" class="square-hack-img">
                     <h3>Xeno</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/e2kjxf028x107uk/Xeno-v1.3.55.exe/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
-                            <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/E2243673-FA58-4262-9E00-888C5620C64B.png" class="dl-icon-img">
+                            <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5010.jpeg" class="dl-icon-img">
                             <span>Install Xeno</span>
                         </a>
                     </div>
