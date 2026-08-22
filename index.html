@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MR-HUB</title>
+    <title>MR HUB</title>
     <style>
         :root {
             --bg-dark: #000000;
@@ -56,7 +56,7 @@
         }
 
         .splash-img-square {
-            width: 140px; height: 140px; border-radius: 20px;
+            width: 150px; height: 150px; border-radius: 20px;
             border: 3px solid #ffffff; box-shadow: 0 0 30px var(--white-glow);
             object-fit: cover; margin-bottom: 30px; animation: pulseGlow 2s infinite alternate;
         }
@@ -164,14 +164,6 @@
             box-shadow: 0 0 10px #ffffff;
         }
 
-        @keyframes logoDance {
-            0% { transform: translateY(0) rotate(0deg); }
-            25% { transform: translateY(-8px) rotate(-6deg); }
-            50% { transform: translateY(0) rotate(0deg); }
-            75% { transform: translateY(-8px) rotate(6deg); }
-            100% { transform: translateY(0) rotate(0deg); }
-        }
-
         header { padding: 20px 0 10px; text-align: center; }
         
         .logo-img-container {
@@ -182,7 +174,6 @@
             background: #000000; 
             position: relative; 
             overflow: hidden;
-            animation: logoDance 3s ease-in-out infinite;
         }
         .logo-img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -202,25 +193,18 @@
             letter-spacing: 3px; 
         }
 
-        @keyframes danceAnim {
-            0% { transform: translateY(0) rotate(0deg); }
-            25% { transform: translateY(-5px) rotate(-5deg); }
-            50% { transform: translateY(0) rotate(0deg); }
-            75% { transform: translateY(-5px) rotate(5deg); }
-            100% { transform: translateY(0) rotate(0deg); }
-        }
-
-        .dancing-hack-img {
-            width: 80px;
-            height: 80px;
-            border-radius: 15px;
-            object-fit: contain;
-            margin: 0 auto 10px;
-            background-color: #ffffff !important;
-            padding: 5px;
-            border: 2px solid #ffffff !important;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-            animation: danceAnim 2.5s ease-in-out infinite;
+        /* تكبير وتوضيح صور الهاكات القديمة المربعة والمستطيلة */
+        .classic-hack-img {
+            width: 100%;
+            max-width: 280px;
+            height: 160px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            background-color: #000000;
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 18px rgba(255, 255, 255, 0.6);
+            display: block;
         }
 
         .container { max-width: 850px; margin: 0 auto; padding: 10px 20px 50px; }
@@ -260,16 +244,15 @@
             text-shadow: 0 0 18px #ffffff; 
         }
 
-        /* صور الأجهزة في القائمة الرئيسية بحواف سوداء خلفية وإطار أبيض مشع */
         .menu-box-img {
-            width: 80px;
-            height: 80px;
+            width: 85px;
+            height: 85px;
             border-radius: 18px;
             object-fit: cover;
             background-color: #000000 !important;
             padding: 4px;
             border: 2px solid #ffffff !important;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), inset 0 0 10px #000000;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
         }
 
         .sub-page { display: none; background: transparent; border: none; padding: 5px; animation: fadeEffect 0.3s ease forwards; }
@@ -279,15 +262,15 @@
         
         .cards-grid { 
             display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
-            gap: 20px; 
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+            gap: 22px; 
         }
 
         .hack-card {
             background: var(--card-bg);
             border: 2px solid #ffffff;
             border-radius: 20px;
-            padding: 18px;
+            padding: 20px;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -297,33 +280,33 @@
         }
 
         .hack-card:hover {
-            transform: translateY(-3px);
+            transform: translateY(-4px);
             border-color: #ffffff;
             box-shadow: 0 10px 30px #ffffff;
         }
 
         .hack-card h3 { 
-            margin: 8px 0 12px; 
-            font-size: 22px; 
+            margin: 8px 0 14px; 
+            font-size: 24px; 
             font-weight: 900; 
             color: #ffffff; 
             text-shadow: 0 0 15px #ffffff; 
         }
         
-        .btn-group { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+        .btn-group { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; }
 
         .dl-link { 
             display: flex; 
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 14px;
             text-decoration: none; 
             background: #111111; 
             color: #ffffff; 
-            padding: 10px 16px; 
+            padding: 12px 18px; 
             border-radius: 16px; 
             font-weight: 900; 
-            font-size: 17px; 
+            font-size: 18px; 
             border: 1px solid #ffffff !important; 
             transition: 0.2s ease; 
             box-shadow: 0 4px 18px rgba(255, 255, 255, 0.2);
@@ -336,14 +319,17 @@
             transform: scale(1.02);
         }
 
+        /* تكبير وتوضيح صورة أيقونة التحميل */
         .dl-icon-img {
-            width: 40px; 
-            height: 40px; 
+            width: 48px; 
+            height: 48px; 
             object-fit: contain;
             background-color: #ffffff !important;
-            border-radius: 10px;
-            padding: 3px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            padding: 4px;
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+            filter: contrast(1.1) brightness(1.05);
         }
 
         .back-btn { 
@@ -510,7 +496,7 @@
             <div class="section-title-white">قائمة الايفون (iOS)</div>
             <div class="cards-grid">
                 <div class="hack-card">
-                    <img src="https://raw.githubusercontent.com/hatm12345cc-source/VN7/refs/heads/main/IMG_1929.png" class="dancing-hack-img">
+                    <img src="https://raw.githubusercontent.com/hatm12345cc-source/VN7/refs/heads/main/IMG_1929.png" class="classic-hack-img">
                     <h3>Delta</h3>
                     <div class="btn-group">
                         <a href="itms-services://?action=download-manifest&url=https://delta.bz/manifest.plist" onclick="playInstantActionSound();" class="dl-link">
@@ -531,7 +517,7 @@
             <div class="section-title-white">قائمة الاندرويد (Android)</div>
             <div class="cards-grid">
                 <div class="hack-card">
-                    <img src="https://raw.githubusercontent.com/hatm12345cc-source/VN7/refs/heads/main/IMG_1929.png" class="dancing-hack-img">
+                    <img src="https://raw.githubusercontent.com/hatm12345cc-source/VN7/refs/heads/main/IMG_1929.png" class="classic-hack-img">
                     <h3>Delta</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/nsyedn6qmsv4pqi/Delta-2.729.840.apk/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
@@ -545,7 +531,7 @@
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/refs/heads/main/IMG_2577.jpeg" class="dancing-hack-img">
+                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/refs/heads/main/IMG_2577.jpeg" class="classic-hack-img">
                     <h3>Arceus X</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/dlypi7n7b8azy74/Roblox.Arceus.X.NEO.2.2.7.apk.download/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
@@ -559,7 +545,7 @@
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/refs/heads/main/IMG_2609.jpeg" class="dancing-hack-img">
+                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/refs/heads/main/IMG_2609.jpeg" class="classic-hack-img">
                     <h3>PunkX</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/4cz0juuzjfyqqm4/PunkX_64Bits.apk/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
@@ -573,7 +559,7 @@
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/refs/heads/main/IMG_2580.jpeg" class="dancing-hack-img">
+                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/refs/heads/main/IMG_2580.jpeg" class="classic-hack-img">
                     <h3>Codex</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/9qz50mqeizkgkww/Codex+v2.729.840.apk/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
@@ -587,7 +573,7 @@
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://github.com/Rxz60/TRX5/raw/refs/heads/main/4865B4C0-8AD9-44E7-AEF1-93DFA9FFE555.png" class="dancing-hack-img">
+                    <img src="https://github.com/Rxz60/TRX5/raw/refs/heads/main/4865B4C0-8AD9-44E7-AEF1-93DFA9FFE555.png" class="classic-hack-img">
                     <h3>VegaX</h3>
                     <div class="btn-group">
                         <a href="https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk" target="_blank" onclick="playInstantActionSound();" class="dl-link">
@@ -597,7 +583,7 @@
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/A590D67D-235D-4C31-8606-59127F58FF03.png" class="dancing-hack-img">
+                    <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/A590D67D-235D-4C31-8606-59127F58FF03.png" class="classic-hack-img">
                     <h3>Trigon</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/1p5mhe2y2hh97z1/2.726.1142_trigon.apk/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
@@ -614,7 +600,7 @@
             <div class="section-title-white">قائمة البي سي (PC)</div>
             <div class="cards-grid">
                 <div class="hack-card">
-                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/heads/main/IMG_2612.jpeg" class="dancing-hack-img">
+                    <img src="https://raw.githubusercontent.com/Rxz60/Rxz/heads/main/IMG_2612.jpeg" class="classic-hack-img">
                     <h3>Velocity</h3>
                     <div class="btn-group">
                         <a href="https://gofile.io/d/biQGwp" target="_blank" onclick="playInstantActionSound();" class="dl-link">
@@ -624,7 +610,7 @@
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/A590D67D-235D-4C31-8606-59127F58FF03.png" class="dancing-hack-img">
+                    <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/A590D67D-235D-4C31-8606-59127F58FF03.png" class="classic-hack-img">
                     <h3>Trigon</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/jwmwp9xhriyqkql/Trigon_Evo_0.2.6.exe/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
@@ -634,7 +620,7 @@
                     </div>
                 </div>
                 <div class="hack-card">
-                    <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/8EDAC7FF-974A-4351-8F15-8C2592B06CF4.png" class="dancing-hack-img">
+                    <img src="https://github.com/Rxz60/RFX/raw/refs/heads/main/8EDAC7FF-974A-4351-8F15-8C2592B06CF4.png" class="classic-hack-img">
                     <h3>Xeno</h3>
                     <div class="btn-group">
                         <a href="https://www.mediafire.com/file/e2kjxf028x107uk/Xeno-v1.3.55.exe/file" target="_blank" onclick="playInstantActionSound();" class="dl-link">
