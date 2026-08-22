@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MR HUB</title>
+    <title>MR-HUB</title>
     <style>
         :root {
             --bg-dark: #000000;
@@ -260,16 +260,16 @@
             text-shadow: 0 0 18px #ffffff; 
         }
 
-        /* صور الأجهزة في القائمة الرئيسية مع الخلفية البيضاء والإطار الأبيض */
+        /* صور الأجهزة في القائمة الرئيسية بحواف سوداء خلفية وإطار أبيض مشع */
         .menu-box-img {
-            width: 75px;
-            height: 75px;
-            border-radius: 16px;
-            object-fit: contain;
-            background-color: #ffffff !important;
-            padding: 6px;
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            object-fit: cover;
+            background-color: #000000 !important;
+            padding: 4px;
             border: 2px solid #ffffff !important;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), inset 0 0 10px #000000;
         }
 
         .sub-page { display: none; background: transparent; border: none; padding: 5px; animation: fadeEffect 0.3s ease forwards; }
@@ -493,15 +493,15 @@
         <div id="main-menu-page" class="main-menu-grid">
             <div class="menu-box-trigger" onclick="playInstantActionSound(); document.getElementById('main-menu-page').style.display='none'; Array.from(document.getElementsByClassName('sub-page')).forEach(p=>p.style.display='none'); document.getElementById('page-ios').style.display='block'; window.scrollTo({top:0,behavior:'smooth'});">
                 <h2>هاكات ايفون + iOS</h2>
-                <img src="https://raw.githubusercontent.com/Rxz60/NXT/refs/heads/main/IMG_4659.jpeg" class="menu-box-img">
+                <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5008.jpeg" class="menu-box-img">
             </div>
             <div class="menu-box-trigger" onclick="playInstantActionSound(); document.getElementById('main-menu-page').style.display='none'; Array.from(document.getElementsByClassName('sub-page')).forEach(p=>p.style.display='none'); document.getElementById('page-android').style.display='block'; window.scrollTo({top:0,behavior:'smooth'});">
                 <h2>هاكات أندرويد + Android</h2>
-                <img src="https://github.com/Rxz60/NXT/raw/refs/heads/main/IMG_4660.jpeg" class="menu-box-img">
+                <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5006.jpeg" class="menu-box-img">
             </div>
             <div class="menu-box-trigger" onclick="playInstantActionSound(); document.getElementById('main-menu-page').style.display='none'; Array.from(document.getElementsByClassName('sub-page')).forEach(p=>p.style.display='none'); document.getElementById('page-pc').style.display='block'; window.scrollTo({top:0,behavior:'smooth'});">
                 <h2>هاكات بي سي + PC</h2>
-                <img src="https://github.com/Rxz60/NXT/raw/refs/heads/main/IMG_4662.jpeg" class="menu-box-img">
+                <img src="https://github.com/Rxz60/MR-HUB/raw/refs/heads/main/IMG_5007.jpeg" class="menu-box-img">
             </div>
         </div>
 
